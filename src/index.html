@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Codigo Cesar</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+ <meta charset="utf-8">
+  <title>Codigo Cesar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
   <body>
     <header>
       <h1>Mujeres Unidas!! </h1>
       <div id="encabezado">  </div>
     </header>
   <main>
-      <div id="reseña">
+      <div id="vista1" class="vista1">
         <p align=center>Bienvenida a la plataforma Mujeres Unidas contra la Violencia fisica, sicologica y sexual.</p>
         <p align=center> Si has sido victima de violencia, ingresa  la clave y haz clic en  ingresar.</p>
-        </div>
         <h2>Ingresar clave secreta:</h2>
-      <input type="password" name="Clave" id='contraseña' value="">
-      <button type="button" name="button" id= "boton" >Ingresar</button>
-      <p id="resultado"></p>
-  </main>
-    <footer></footer>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" class='contraseñanormal' name="Clave" id='contraseña' value="" autofocus>
+        <button class="boton" type="button" name="button" id= "boton" >Ingresar</button>
+        <p id="resultado"></p>
+      </div>
+      <div id="vista2" class="vista2 hide">
+        <b><p class="pasos">Pasos a seguir:</p>
+        <ol>
+         <li value="1">Escribe el mensaje que quieres contar.</li>
+         <li>Escoge un numero para cifrar o descifrar.</li>
+         <li>Ahora escoge el boton "cifrar" o"descifrar".</li>
+         <li>Muy bien! ahora puedes ver el resultado.</li>
+         <li>Puedes limpiar y escribir un nuevo mensaje si deseas.</li>
+         <li>Puedes darle clic en "Salir" y regresar cuando quieras.</li>
+        </ol>
+          <button class="botonEjm" type="button" name="button" id= "botonEjemplo" >Ver Ejemplo</button>
+          <b><p>Ingrese su mensaje:</p>
+            <textarea name="comentarios" class='mensajetexto' rows="10" cols="40" placeholder="Escriba aquí"></textarea>
+          <br/>
+          <b><p>Escoge un número para cifrar o descifrar:</p>
+            <input type="number" name="numero" min="-20" max="20">
+            <button class="botonC" type="button" name="button" id= "botonCifrar" >Cifrar</button>
+            <button class="botonD" type="button" name="button" id= "botonDescifrar" >Descifrar</button>
+          <br/>
+          <b><p>Resultado:</p>
+            <textarea name="comentarios" class='resultadogeneral' rows="10" cols="40"></textarea>
+          <b><p>Gracias por confiar en ti</p>
+            <button class="botonS" type="button" name="button" id= "botonSalir" >Salir</button>
+       </div>
+
+    </main>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+    <footer>
+    <b><p align=center>Recuerda que este es un espacio hecho especialmemte para ti, donde  puedes contarnos tu historia de manera confidencial.</p>
+  </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-  </body>
+    </body>
 </html>

@@ -1,9 +1,16 @@
-
 h1{
   font-size: 50pt;
   font-family: "Homer Simpson", cursive;
   text-align: center;
   color: #FE7F88;
+}
+
+h2{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Gloria Hallelujah';
+  margin-top: 10px;
+  color: #873600;
 }
 
 #encabezado{
@@ -12,29 +19,87 @@ h1{
    background-repeat: repeat-x;
    position: center;
 }
-#reseña{
+
+#vista1{
   text-align: center;
   font-size: 23px;
   font-family: 'Gloria Hallelujah';
   margin-top: 30px;
   color: #873600  ;
 }
-h2{
+
+#vista2{
   text-align: center;
-  font-size: 20px;
+  font-size: 23px;
   font-family: 'Gloria Hallelujah';
-  margin-top: 10px;
-  color: #873600;
+  margin-top: 30px;
+  color: #873600  ;
 }
-#contraseña{
+
+.hide{
+  display: none;
+}
+
+  .contraseñanormal{
   text-align: center;
   font: 20px verdana;
   border-radius: 50px;
-  border-color: #ff8b9e;
-  margin-left: 800px;
-  outline-color: transparent; 
+  border-color: purple;
+  outline-color: transparent;
 }
-  #boton{
+  .contraseñaroja{
+  text-align: center;
+  font: 20px verdana;
+  border-radius: 50px;
+  border-color: red;
+  outline-color: transparent;
+}
+
+  .boton{
+  border-radius: 50px;
+  font: 20px verdana;
+  background-color: #FE7F88;
+  margin-bottom: 10px;
+  border-color: #f8f9fa;
+  color: white;
+  outline-color: transparent;
+}
+.botonEjm{
+  position: left;
+  text-align: right;
+  border-radius: 50px;
+  font: 20px verdana;
+  background-color: #FE7F88;
+  margin-bottom: 10px;
+  border-color: #f8f9fa;
+  color: white;
+  outline-color: transparent;
+}
+.botonC{
+  position: left;
+  text-align: right;
+  border-radius: 50px;
+  font: 20px verdana;
+  background-color: #FE7F88;
+  margin-bottom: 10px;
+  border-color: #f8f9fa;
+  color: white;
+  outline-color: transparent;
+}
+.botonD{
+  position: left;
+  text-align: right;
+  border-radius: 50px;
+  font: 20px verdana;
+  background-color: #FE7F88;
+  margin-bottom: 10px;
+  border-color: #f8f9fa;
+  color: white;
+  outline-color: transparent;
+}
+.botonC{
+  position: left;
+  text-align: right;
   border-radius: 50px;
   font: 20px verdana;
   background-color: #FE7F88;
@@ -48,5 +113,33 @@ h2{
   font-size: 20px;
   font-family: 'Gloria Hallelujah';
   margin-top: 10px;
-  color: black ;
+  color: red ;
+}
+
+ .pasos{
+ text-align: left;
+   font-style: arial;
+   font-size: 20px;
+   color:black;
+   }
+
+li{
+  text-align: left;
+    font-style: arial;
+    font-size: 20px;
+  color:#990099;
+  }
+.mensajetexto{
+  font: 50px verdana;
+  border-radius: 50px;
+  border-color: red;
+  outline-color: transparent;
+  padding: 20px;
+}
+.resultadogeneral{
+  font: 50px verdana;
+  border-radius: 50px;
+  border-color: red;
+  outline-color: transparent;
+  padding: 20px;
 }
