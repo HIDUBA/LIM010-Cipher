@@ -5,6 +5,7 @@ function validar(){
   if (claveIngresada == 'LABORATORIA') {
     document.getElementById('vista1').classList.add('hide');
     document.getElementById('vista2').classList.remove('hide');
+
   }
   else {
     document.getElementById('resultado').innerHTML="Error! Clave incorrecta";
@@ -21,9 +22,9 @@ function validar(){
     }
   }
 };
+
 function retardar(){
   let puntos='';
-  let espacio='';
   const claveIngresada = document.getElementById('contraseña').value;
   if (claveIngresada == '') {
     document.getElementById('resultado').innerHTML="Ingrese una contraseña!";
@@ -33,17 +34,15 @@ function retardar(){
   }
   else {
     var cargando = setInterval(function () {
-      console.log('inicio');
-        if (puntos!='...............') {
+        if (puntos!='.......') {
           puntos+='.';
-          espacio+="&nbsp";
-          document.getElementById('resultado').innerHTML=espacio +"Ingresando"+puntos;
+          document.getElementById('resultado').innerHTML="Ingresando"+puntos;
         }
         else {
           clearInterval(cargando);
           validar();
         }
-    }, 70);
+    }, 100);
   }
 }
 const boton = document.getElementById('boton');

@@ -3,7 +3,6 @@
 ## Índice
 
 - [Índice](#índice)
-- [Preámbulo](#preámbulo)
 - [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
 - [Consideraciones generales](#consideraciones-generales)
 - [Requerimientos del proyecto](#requerimientos-del-proyecto)

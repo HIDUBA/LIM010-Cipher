@@ -12,11 +12,10 @@
     </header>
   <main>
       <div id="vista1" class="vista1">
-        <p align=center>Bienvenida a la plataforma Mujeres Unidas contra la Violencia fisica, sicologica y sexual.</p>
-        <p align=center> Si has sido victima de violencia, ingresa  la clave y haz clic en  ingresar.</p>
+      <b><p class="reseña">Bienvenida a la plataforma Mujeres Unidas contra la violencia fÍsica, sicologica y sexual.</p>
+      <b><p class="reseña"> Si has sido victima de violencia, ingresa  la clave y haz clic en  ingresar.</p>
         <h2>Ingresar clave secreta:</h2>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="password" class='contraseñanormal' name="Clave" id='contraseña' value="" autofocus>
+          <input type="password" class='contraseñanormal' name="Clave" id='contraseña' value="" autofocus>
         <button class="boton" type="button" name="button" id= "boton" >Ingresar</button>
         <p id="resultado"></p>
       </div>
@@ -30,28 +29,34 @@
          <li>Puedes limpiar y escribir un nuevo mensaje si deseas.</li>
          <li>Puedes darle clic en "Salir" y regresar cuando quieras.</li>
         </ol>
-          <button class="botonEjm" type="button" name="button" id= "botonEjemplo" >Ver Ejemplo</button>
-          <b><p>Ingrese su mensaje:</p>
+          <button class="boton" type="button" name="button" id= "botonEjemplo" >Ver Ejemplo</button>
+          <b><p class=texto>Ingrese su mensaje:</p>
             <textarea name="comentarios" class='mensajetexto' rows="10" cols="40" placeholder="Escriba aquí"></textarea>
           <br/>
+          <div class="desplazamiento">
           <b><p>Escoge un número para cifrar o descifrar:</p>
             <input type="number" name="numero" min="-20" max="20">
-            <button class="botonC" type="button" name="button" id= "botonCifrar" >Cifrar</button>
-            <button class="botonD" type="button" name="button" id= "botonDescifrar" >Descifrar</button>
+            </div>
+            <br/>
+            <div class="botones">
+              <button class="boton" type="button" name="button" id= "botonCifrar" >Cifrar</button>
+              <button class="boton" type="button" name="button" id= "botonDescifrar" >Descifrar</button>
+            </div>
           <br/>
-          <b><p>Resultado:</p>
+          <b><p class="texto">Resultado:</p>
             <textarea name="comentarios" class='resultadogeneral' rows="10" cols="40"></textarea>
           <b><p>Gracias por confiar en ti</p>
-            <button class="botonS" type="button" name="button" id= "botonSalir" >Salir</button>
+            <button class="boton" type="button" name="button" id= "botonSalir" >Salir</button>
        </div>
-
+<div id="vista3" class="vista3 hide">
+</div>
     </main>
   <br/>
   <br/>
   <br/>
   <br/>
     <footer>
-    <b><p align=center>Recuerda que este es un espacio hecho especialmemte para ti, donde  puedes contarnos tu historia de manera confidencial.</p>
+    <b><p align=center> => Recuerda que este es un espacio hecho especialmemte para ti, donde  puedes contarnos tu historia de manera confidencial.</p>
   </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
