@@ -6,58 +6,64 @@
   <link rel="stylesheet" href="style.css" />
 </head>
   <body>
-    <header>
-      <h1>Mujeres Unidas!! </h1>
-      <div id="encabezado">  </div>
-    </header>
+  <header>
+   <h1>Mujeres Unidas</h1>
+   <div id="encabezado">  </div>
+  </header>
   <main>
-      <div id="vista1" class="vista1">
-      <b><p class="reseña">Bienvenida a la plataforma Mujeres Unidas contra la violencia fÍsica, sicologica y sexual.</p>
-      <b><p class="reseña"> Si has sido victima de violencia, ingresa  la clave y haz clic en  ingresar.</p>
-        <h2>Ingresar clave secreta:</h2>
-          <input type="password" class='contraseñanormal' name="Clave" id='contraseña' value="" autofocus>
-        <button class="boton" type="button" name="button" id= "boton" >Ingresar</button>
-        <p id="resultado"></p>
-      </div>
-      <div id="vista2" class="vista2 hide">
-        <b><p class="pasos">Pasos a seguir:</p>
-        <ol>
-         <li value="1">Escribe el mensaje que quieres contar.</li>
-         <li>Escoge un numero para cifrar o descifrar.</li>
-         <li>Ahora escoge el boton "cifrar" o"descifrar".</li>
-         <li>Muy bien! ahora puedes ver el resultado.</li>
-         <li>Puedes limpiar y escribir un nuevo mensaje si deseas.</li>
-         <li>Puedes darle clic en "Salir" y regresar cuando quieras.</li>
-        </ol>
-          <button class="boton" type="button" name="button" id= "botonEjemplo" >Ver Ejemplo</button>
-          <b><p class=texto>Ingrese su mensaje:</p>
-            <textarea name="comentarios" class='mensajetexto' rows="10" cols="40" placeholder="Escriba aquí"></textarea>
-          <br/>
-          <div class="desplazamiento">
-          <b><p>Escoge un número para cifrar o descifrar:</p>
-            <input type="number" name="numero" min="-20" max="20">
-            </div>
-            <br/>
-            <div class="botones">
-              <button class="boton" type="button" name="button" id= "botonCifrar" >Cifrar</button>
-              <button class="boton" type="button" name="button" id= "botonDescifrar" >Descifrar</button>
-            </div>
-          <br/>
-          <b><p class="texto">Resultado:</p>
-            <textarea name="comentarios" class='resultadogeneral' rows="10" cols="40"></textarea>
-          <b><p>Gracias por confiar en ti</p>
-            <button class="boton" type="button" name="button" id= "botonSalir" >Salir</button>
-       </div>
-<div id="vista3" class="vista3 hide">
-</div>
+
+   <div id="vista1" class="vista1">
+     <b><p class="reseña">Bienvenida a la plataforma Mujeres Unidas contra la violencia fÍsica, sicologica y sexual.</p>
+     <b><p class="reseña"> Si has sido victima de violencia, ingresa  la clave y haz clic en  ingresar.</p>
+     <h2>Ingresar clave secreta:</h2>
+     <input type="password"  name="Clave" id='contraseña' value="" autofocus>
+     <button type="button" name="button" id= "btnIngresar" >Ingresar</button>
+     <p id="resultado"></p>
+     </div>
+
+   <div id="vista2" class="vista2 hide">
+     <div id="instrucciones">
+     <b><p class="texto">Pasos a seguir:</p>
+     <ol>
+      <li value="1">Escribe el mensaje que quieres contar.</li>
+      <li>Escoge un numero para cifrar o descifrar.</li>
+      <li>Ahora escoge el boton "cifrar" o"descifrar".</li>
+      <li>Muy bien! ahora puedes ver el resultado.</li>
+      <li>Puedes limpiar y escribir un nuevo mensaje si deseas.</li>
+      <li>Puedes darle clic en "Salir" y regresar cuando quieras.</li>
+      </ol>
+      <button  type="button" name="button" id= "btnEjemplo" >Ver Ejemplo</button>
+    </div>
+      <b><p class=texto>Ingrese su mensaje:</p>
+      <textarea id="msjIngresado" name="comentarios" placeholder="Escriba aquí"></textarea>
+      <br/>
+      <div id= "ofset">
+      <b><p class="escogeClave">Escoge un número para cifrar o descifrar:</p>
+      <input type="number" id="clave"  name="numero" min="0" max="40">
+    </div>
+
+      <button type="button" name="button" id= "btnCifrar" >Cifrar</button>
+      <button type="button" name="button" id= "btnDescifrar" >Descifrar</button>
+      <button type="button" name="button" id= "btnLimpiar" >Limpiar</button>
+
+      <br/>
+      <b><p class="texto">Resultado:</p>
+      <textarea id="msjResultado" name="comentarios"></textarea>
+      <b><p class="agradecimiento">¡Gracias por confiar en ti!</p>
+      <button  type="button" name="button" id= "btnSalir" >Salir</button>
+
+    <div id="vista3" class="vista3 hide">
+      <p>hola</p>
+    </div>
     </main>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
+      <br/>
+      <br/>
+      
+
     <footer>
     <b><p align=center> => Recuerda que este es un espacio hecho especialmemte para ti, donde  puedes contarnos tu historia de manera confidencial.</p>
-  </footer>
+    </footer>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
     </body>
