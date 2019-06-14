@@ -40,7 +40,7 @@ h1{
   background-size: 30px;
   background-repeat: no-repeat;
   position: relative;
-  right: -210px;
+  left: 220px;
   height: 30px;
 }
 
@@ -60,7 +60,7 @@ h2{
   padding: 0px;
   align-content: center;
   position: relative;
-  top: -50px;
+  bottom: 50px;
 }
 
 #contraseña{
@@ -71,7 +71,7 @@ h2{
   border-color: purple;
   outline-color: transparent;
   position: relative;
-  top: -40px;
+  bottom: 50px;
 }
 
 #btnIngresar{
@@ -82,7 +82,7 @@ h2{
   color: white;
   outline-color: transparent;
   position: relative;
-  top: -40px;
+  bottom: 48px;
   cursor: pointer;
 }
 
@@ -94,7 +94,7 @@ h2{
   font-weight: 100;
   color: red;
   position: relative;
-  top: -40px;
+  bottom: 40px;
   right: 10px;
 }
 
@@ -109,7 +109,7 @@ h2{
   border-color: purple;
   outline-color: transparent;
   text-align: center;
-  top: -45px;
+  bottom: 45px;
 }
 
 #instrucciones{
@@ -145,13 +145,12 @@ li{
   background-color: #FE7F88;
   border-color: #f8f9fa;
   color: white;
-  top: -190px;
+  bottom: 190px;
   outline-color: transparent;
-  right: -250px;
   height: 200px;
+  left: 500px;
   width: 200px;
   display: table;
-  margin: 20px auto;
   border-radius: 100%;
   cursor: pointer;
 }
