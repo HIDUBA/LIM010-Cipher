@@ -7,19 +7,18 @@ window.cipher = {
     for (let i = 0; i < string.length; i++) {
       toAcsii = string.charCodeAt(i);
       
-      if (65<=toAcsii && toAcsii<=90) {
+      if (toAcsii>=65 && toAcsii<=90) {
         masKey = (toAcsii - 65 + parseInt(offset))%26 +65;
-        msjResultado += String.fromCharCode(masKey);
       }
       else if(97<=toAcsii && toAcsii<=122) {
         masKey = (toAcsii - 97 + parseInt(offset))%26 + 97;
-        msjResultado += String.fromCharCode(masKey);
       }
       else{
-        msjResultado += String.fromCharCode(toAcsii);
+        masKey= toAcsii;
       }
+      msjResultado += String.fromCharCode(masKey);
     }
-  return msjResultado.toUpperCase();
+  return msjResultado;
   },
 
   decode: (offset, string) => {
@@ -31,18 +30,18 @@ window.cipher = {
     for (let i = 0; i < string.length; i++) {
       toAcsii = string.charCodeAt(i);
       
-      if (65<=toAcsii && toAcsii<=90) {
-        masKey = (toAcsii -39 - parseInt(offset))%26 + 65;
-        msjResultado += String.fromCharCode(masKey);
+      if (toAcsii>=65 && toAcsii<=90) {
+        masKey = 90 -((90 - toAcsii + parseInt(offset))%26);
       }
         else if(97<=toAcsii && toAcsii<=122) {
-          masKey = (toAcsii - 71 - parseInt(offset))%26 + 97;
-          msjResultado += String.fromCharCode(masKey);
+          masKey = 122 -((122 - toAcsii + parseInt(offset))%26);
+
       }
       else{
-        msjResultado += String.fromCharCode(toAcsii);
+        masKey= toAcsii;
       }
+      msjResultado += String.fromCharCode(masKey);
     }
-  return msjResultado.toUpperCase();
+  return msjResultado;
   }
 };

@@ -1,67 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="es"> 
 <head>
  <meta charset="utf-8">
   <title>Codigo Cesar</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Cookie|Didact+Gothic|Kalam|Pacifico|Patrick+Hand|Sacramento&display=swap" rel="stylesheet">
 </head>
   <body>
   <header>
    <h1>Mujeres Unidas</h1>
    <div id="encabezado">  </div>
   </header>
-  <main>
 
+  <main>
    <div id="vista1" class="vista1">
-     <b><p class="reseña">Bienvenida a la plataforma Mujeres Unidas contra la violencia fÍsica, sicologica y sexual.</p>
-     <b><p class="reseña"> Si has sido victima de violencia, ingresa  la clave y haz clic en  ingresar.</p>
-     <h2>Ingresar clave secreta:</h2>
-     <input type="password"  name="Clave" id='contraseña' value="" autofocus>
+     <p class="reseña">Bienvenida a la plataforma "Mujeres Unidas" contra la violencia fÍsica, sicológica y sexual. Si has sido victima de violencia, ingresa  la clave y haz clic en  ingresar.</p>
+     <div id="candado"></div>
+     <h2>Ingresa clave secreta:</h2>
+     <input type="password"  name="Clave" id="contraseña" value="" autofocus>
      <button type="button" name="button" id= "btnIngresar" >Ingresar</button>
      <p id="resultado"></p>
-     </div>
+    </div>
 
    <div id="vista2" class="vista2 hide">
      <div id="instrucciones">
-     <b><p class="texto">Pasos a seguir:</p>
+     <b><p class="texto">Pasos a seguir:</p></b>
      <ol>
       <li value="1">Escribe el mensaje que quieres contar.</li>
       <li>Escoge un numero para cifrar o descifrar.</li>
       <li>Ahora escoge el boton "cifrar" o"descifrar".</li>
       <li>Muy bien! ahora puedes ver el resultado.</li>
-      <li>Puedes limpiar y escribir un nuevo mensaje si deseas.</li>
+      <li>Puedes borrar y escribir un nuevo mensaje si deseas.</li>
       <li>Puedes darle clic en "Salir" y regresar cuando quieras.</li>
       </ol>
       <button  type="button" name="button" id= "btnEjemplo" >Ver Ejemplo</button>
     </div>
-      <b><p class=texto>Ingrese su mensaje:</p>
+     <br/>
+     <br/>
+      <b><p class="texto">Ingrese su mensaje:</p></b>
       <textarea id="msjIngresado" name="comentarios" placeholder="Escriba aquí"></textarea>
       <br/>
-      <div id= "ofset">
-      <b><p class="escogeClave">Escoge un número para cifrar o descifrar:</p>
+
+    <div>
+      <b><p class="escogeClave">Escoge un número para cifrar o descifrar:</p></b>
       <input type="number" id="clave"  name="numero" min="0" max="40">
     </div>
 
       <button type="button" name="button" id= "btnCifrar" >Cifrar</button>
       <button type="button" name="button" id= "btnDescifrar" >Descifrar</button>
-      <button type="button" name="button" id= "btnLimpiar" >Limpiar</button>
+      <button type="button" name="button" id= "btnBorrar" value="Borrar" >Borrar</button>
 
       <br/>
-      <b><p class="texto">Resultado:</p>
+      <p class="texto">Resultado:</p>
       <textarea id="msjResultado" name="comentarios"></textarea>
-      <b><p class="agradecimiento">¡Gracias por confiar en ti!</p>
+      <p class="agradecimiento">¡Gracias por confiar en ti!</p>
       <button  type="button" name="button" id= "btnSalir" >Salir</button>
+    </div>
 
     <div id="vista3" class="vista3 hide">
-      <p>hola</p>
+    <div>
+        <b><p class="texto">Pasos a seguir:</p></b>
+         <ol>
+          <li value="1">Escribe el mensaje que quieres contar.</li>
+          <li>Escoge un numero para cifrar o descifrar.</li>
+          <li>Ahora escoge el boton "cifrar" o"descifrar".</li>
+          <li>Muy bien! ahora puedes ver el resultado.</li>
+          <li>Puedes borrar y escribir un nuevo mensaje si deseas.</li>
+          <li>Puedes darle clic en "Salir" y regresar cuando quieras.</li>
+          </ol>
+        </div>
+        <div id="ejmimagen"></div>
+      <button  type="button" name="button" id= "btnRegresar" >Regresar</button>
     </div>
+    
     </main>
-      <br/>
-      <br/>
-      
 
     <footer>
-    <b><p align=center> => Recuerda que este es un espacio hecho especialmemte para ti, donde  puedes contarnos tu historia de manera confidencial.</p>
+    <p> @MujeresUnidas :: Todos los derechos reservados:: </p>
     </footer>
 
     <script src="cipher.js"></script>

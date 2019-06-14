@@ -1,8 +1,9 @@
 let password=0;
-//const btnIngresar=document.getElementById('btnIngresar');
+const contra='LABORATORIA';
+const btnIngresar=document.getElementById('btnIngresar')
 btnIngresar.addEventListener('click',()=>{
   const contraseña=document.getElementById('contraseña').value;
-  if (contraseña =='LABORATORIA') {
+  if (contraseña ==contra) {
     document.getElementById('vista1').classList.add('hide');
     document.getElementById('vista2').classList.remove('hide');
 }
@@ -22,9 +23,10 @@ else {
 
   const btnEjemplo=document.getElementById('btnEjemplo');
 btnEjemplo.addEventListener('click',()=>{
-  document.getElementById('vista3').classList.add('hide');
-  document.getElementById('vista2').classList.remove('hide');
+  document.getElementById('vista3').classList.remove('hide');
+  document.getElementById('vista2').classList.add('hide');
 });
+
 
 const btnCifrar=document.getElementById('btnCifrar');
 btnCifrar.addEventListener('click',()=>{
@@ -40,5 +42,31 @@ btnDescifrar.addEventListener('click',()=>{
     const clave= document.getElementById('clave').value;
     const msjResultado = document.getElementById('msjResultado');
     msjResultado.innerHTML=window.cipher.decode(clave,msjIngresado);
+});
+
+
+const limpiar = () => {
+  const msjResultado = document.getElementById('msjResultado');
+  document.getElementById('msjIngresado').value="";
+  msjResultado.innerHTML="";
+};
+
+const btnBorrar=document.getElementById('btnBorrar');
+btnBorrar.addEventListener('click',()=> 
+limpiar());
+
+const btnSalir=document.getElementById('btnSalir');
+btnSalir.addEventListener('click',()=>{
+document.getElementById('vista1').classList.remove('hide');
+document.getElementById('vista2').classList.add('hide');
+document.getElementById('contraseña').value="";
+limpiar();
+});
+
+const btnRegresar=document.getElementById('btnRegresar');
+btnRegresar.addEventListener('click',()=>{
+document.getElementById('vista2').classList.remove('hide');
+document.getElementById('vista3').classList.add('hide');
+limpiar();
 });
 

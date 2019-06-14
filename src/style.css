@@ -1,126 +1,173 @@
+body{
+  background-image: url(https://i.pinimg.com/originals/48/9a/7c/489a7c1534087f6bc10a838a5ad1ede7.jpg);
+  background-size: cover;
+}
+  
+main{
+  margin: 0 auto;
+  align-content: center;
+  border: 3px  white;
+  border-style: dotted;
+  padding: 10px 30px;
+  width: 700px;
+  background-position: center center;
+  border-radius: 50px;  
+}
+
 #vista1{
-text-align: center;
+  text-align: center;
 }
   
 h1{
-font-family: 'Pacifico', cursive;
-font-size: 50pt;
-text-align: center;
-color: rgb(212, 84, 92);
+  font-family: 'Cookie', cursive;
+  font-size: 80pt;
+  text-align: center;
+  color:white;
 }
 
 #encabezado{
-background-image: url("./Imagenes/mujeresunidas.png");
-height: 350px;
-background-repeat: repeat-x;
-position: center;
+  background-image: url(http://impetumexico.org/wp-content/uploads/2018/02/nosotras72.png);
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px;
+  border-color:transparent ;
+  border-radius: 50px;
+}
+
+#candado{
+  background-image: url(./Imagenes/bloquear.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  right: -210px;
+  height: 30px;
 }
 
 .reseña{
-text-align: center;
-font-size: 23px;
-font-family: 'Pacifico', cursive;
-font-style: normal;
-font-weight: 800;
-color: #913319;
+  text-align: center;
+  font-size: 23px;
+  font-family: 'Patrick Hand', cursive;
+  font-style: normal;
+  font-weight: 100;
+  color: #913319;
+
 }
 
 h2{
-position: relative;
-right: 60px;
-font-size: 22px;
-font-family: 'Lobster', cursive;
-font-style: normal;
-font-weight: 200;
-color: #a72992;
+  font-family: 'Patrick Hand', cursive;
+  color: #a72992;
+  padding: 0px;
+  align-content: center;
+  position: relative;
+  top: -50px;
 }
 
 #contraseña{
-float: center;
-text-align: center;
-font: 20px verdana;
-border-radius: 50px;
-border-color: purple;
-outline-color: transparent;
+  text-align: center;
+  border-radius: 80px;
+  font-size: 14px;
+  height: 28px;
+  border-color: purple;
+  outline-color: transparent;
+  position: relative;
+  top: -40px;
 }
 
 #btnIngresar{
-border-radius: 50px;
-float: center;
-font-size: 25px;
-background-color: #FE7F88;
-margin-bottom: 10px;
-border-color: #f8f9fa;
-color: white;
-outline-color: transparent;
+  border-radius: 40px;
+  font-size: 22px;
+  background-color: #FE7F88;
+  border-color: #f8f9fa;
+  color: white;
+  outline-color: transparent;
+  position: relative;
+  top: -40px;
+  cursor: pointer;
+}
+
+#resultado{
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: red;
+  position: relative;
+  top: -40px;
+  right: 10px;
 }
 
 #vista2{
-text-align: center;
+  text-align: center;
 }
 
 #clave{
   position: relative;
-  left: 280px;
-  font-size: 25px;
+  left: 200px;
+  font-size: 20PX;
   border-color: purple;
-  outline-color: transparent;  
-  top: -50px;
-  }
-  
-  #ofset{
-    position: center;
-  }
+  outline-color: transparent;
+  text-align: center;
+  top: -45px;
+}
 
-  #instrucciones{
-  left: 20px;
-  width: 50%px;
-  }
+#instrucciones{
+  height: 150px;
+}
 
-  .texto{
-    text-align: left;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    color: #990099;
-  }
+.texto{
+  text-align: left;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  color: #990099;
+}
   
-  li{
+li{
   text-align: left;
   font-style: arial;
   font-size: 20px;
   color:black;
-  }
+}
   
-  .escogeClave{
-    text-align: center;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #990099;
-  }
+.escogeClave{
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #990099;
+}
 
 #btnEjemplo{
   position: relative;
   padding: 5px;
-  font-size: 30px;
+  font-size: 35px;
   background-color: #FE7F88;
   border-color: #f8f9fa;
   color: white;
-  top: -130px;
+  top: -190px;
   outline-color: transparent;
-  }
+  right: -250px;
+  height: 200px;
+  width: 200px;
+  display: table;
+  margin: 20px auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
   
   #btnCifrar{
-    position: relative;
-    left: -100px;
-    float: center;
-    font-size: 25px;
-    background-color: #FE7F88;
-    margin-bottom: 10px;
-    border-color: #f8f9fa;
-    color: white;
-    padding: 20px,
-    outline-color: transparent;
+  position: relative;
+  left: -100px;
+  float: center;
+  font-size: 25px;
+  background-color: #FE7F88;
+  margin-bottom: 10px;
+  border-color: #f8f9fa;
+  color: white;
+  padding: 20px,
+  outline-color: transparent;
+  cursor: pointer;
   }
   
   #btnDescifrar{
@@ -133,11 +180,12 @@ text-align: center;
   color: white;
   padding: 20px, 20px;
   outline-color: transparent;
+  cursor: pointer;
   }
   
-  #btnLimpiar{
-    position: relative;
-    right: -100px;
+  #btnBorrar{
+  position: relative;
+  right: -100px;
   float: center;
   font-size: 25px;
   background-color: #FE7F88;
@@ -146,7 +194,9 @@ text-align: center;
   color: white;
   padding: 20px, 20px;
   outline-color: transparent;
+  cursor: pointer;
   }
+
   #btnSalir{
     position: relative;
   float: center;
@@ -157,31 +207,54 @@ text-align: center;
   color: white;
   padding: 20px, 20px;
   outline-color: transparent;
+  cursor: pointer;
   }
 
 #msjIngresado{
   text-align: left;
   width: 95%;
-  height: 200px;
+  height: 100px;
   border-color: rgb(165, 74, 89);
   outline-color: transparent;  
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 #msjResultado{
   text-align: left;
   width: 95%;
-  height: 200px;
   border-color: rgb(165, 74, 89);
   outline-color: transparent;  
-  margin-bottom: 10px
+  height: 100px;
 }
   
 #vista3{
-background-image: url("./Imagenes/ejemplo.png");
-height: 300px;
-background-repeat: no-repeat;
-position: center;
+height: 700px;
+background-position: center center;
+padding: 5px;
+}
+
+#ejmimagen{
+  background-image: url(./Imagenes/ejemploterminado.png);
+  height: 500px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 70px;
+    align-content: center;
+    background-size: 550px;
+}
+#btnRegresar{
+  position: relative;
+    float: center;
+    font-size: 25px;
+    background-color: #FE7F88;
+    margin-bottom: 10px;
+    border-color: #f8f9fa;
+    color: white;
+    padding: 20px, 20px;
+    outline-color: transparent;
+    left: 500px;
+    cursor: pointer;
+    bottom: 620px;
 }
 
 .hide{
@@ -190,7 +263,7 @@ display: none;
 
 .agradecimiento{
 text-align: center;
-font-size: 20px;
+font-size: 15px;
 font-family: Arial, Helvetica, sans-serif;
 margin-top: 10px;
 color: black;
@@ -198,7 +271,7 @@ color: black;
 
 footer{
   text-align: center;
-  font-style: 'Dancing Script', cursive;
+  font-style: 'Dancing Script';
   font-size: 20px;
-  color:#af58af;
+  color: black;
   }
