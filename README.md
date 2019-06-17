@@ -27,13 +27,14 @@ Mujeres Unidas es una plataforma que da acompañamiento a mujeres víctimas de v
 
 ### Resumen del feedback: 
 
-- Me recomendaron explicar mejor las instrucciones, y opte por hacer un ejemplo.
+- Me recomendaron explicar mejor las instrucciones y opte por hacer un ejemplo.
 - Mejorar los colores y las imagenes.
-- Mejorar las fuentes de letra
+- Mejorar el tipo de letra
+
 
 ### Imagen del prototipo final en Balsamiq:
 
-![Vista1l](src/Imagenes/Balsamiqvista1.png)
+![Vista1](src/Imagenes/Balsamiqvista1.png)
 
 ![Vista2](src/Imagenes/Balsamiqvista2.png)
 

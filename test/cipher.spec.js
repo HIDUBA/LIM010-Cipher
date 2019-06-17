@@ -10,14 +10,14 @@ describe('cipher', () => {
       assert.equal(typeof cipher.encode, 'function');
     });
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
-    assert.equal(cipher.encode(33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "HIJKLMNOPQRSTUVWXYZABCDEFG");
+      assert.equal(cipher.encode(33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "HIJKLMNOPQRSTUVWXYZABCDEFG");
     });
     it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" con offset 33', () => {
-    assert.equal(cipher.encode(33, "abcdefghijklmnopqrstuvwxyz"), "hijklmnopqrstuvwxyzabcdefg");
+      assert.equal(cipher.encode(33, "abcdefghijklmnopqrstuvwxyz"), "hijklmnopqrstuvwxyzabcdefg");
     });
     it('debería retornar "32" para "32" con offset 1', () => {
       assert.equal(cipher.encode(1, "32"), "32");
-      });
+    });
   });
 
   describe('cipher.decode', () => {
@@ -34,6 +34,6 @@ describe('cipher', () => {
     });
     it('debería retornar " " para " " con offset 1', () => {
       assert.equal(cipher.decode(1, "32"), "32");
-      });
+    });
   });
 });

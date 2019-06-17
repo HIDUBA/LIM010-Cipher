@@ -1,6 +1,16 @@
 body{
   background-image: url(https://i.pinimg.com/originals/48/9a/7c/489a7c1534087f6bc10a838a5ad1ede7.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media(max-width: 768px){
+body{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: contain;
+}
 }
   
 main{
@@ -14,16 +24,39 @@ main{
   border-radius: 50px;  
 }
 
+@media(max-width: 768px){
+  main{
+  margin-left: 135px;
+  padding-left: 100px;
+  padding: 20px;
+}
+}
+
 #vista1{
   text-align: center;
 }
-  
+
+
+
 h1{
   font-family: 'Cookie', cursive;
   font-size: 80pt;
-  text-align: center;
   color:white;
+  text-align: center;
+  margin: 10px;
+  padding-top: 80px;
 }
+
+@media(max-width: 768px){
+  h1{
+    text-align: center;
+    line-height: 100px;
+    width:950px;
+    height:80px;
+    padding-top: 70px;
+    padding-left: 50px;
+  }
+  }
 
 #encabezado{
   background-image: url(http://impetumexico.org/wp-content/uploads/2018/02/nosotras72.png);
@@ -31,9 +64,20 @@ h1{
   background-repeat: no-repeat;
   background-position: center;
   margin: 20px;
-  border-color:transparent ;
-  border-radius: 50px;
+  min-width: 720px;
+  background-size:contain;
 }
+
+@media(max-width: 768px){
+  #encabezado{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 30px;
+    margin-left: 120px;
+    padding-left: 90px;
+  }
+  }
 
 #candado{
   background-image: url(./Imagenes/bloquear.png);
@@ -46,12 +90,19 @@ h1{
 
 .reseña{
   text-align: center;
-  font-size: 23px;
+  font-size: 26px;
   font-family: 'Patrick Hand', cursive;
   font-style: normal;
   font-weight: 100;
   color: #913319;
 
+}
+
+@media(max-width: 768px){
+  .reseña{
+    text-align: center;
+
+  }
 }
 
 h2{
@@ -140,22 +191,20 @@ li{
 
 #btnEjemplo{
   position: relative;
-  padding: 5px;
-  font-size: 35px;
+  float: center;
+  font-size: 25px;
   background-color: #FE7F88;
+  margin-bottom: 10px;
   border-color: #f8f9fa;
   color: white;
-  bottom: 190px;
+  padding: 20px, 20px;
   outline-color: transparent;
-  height: 200px;
-  left: 500px;
-  width: 200px;
-  display: table;
-  border-radius: 100%;
+  left: 250px;
   cursor: pointer;
+  bottom: 120px;
 }
   
-  #btnCifrar{
+#btnCifrar{
   position: relative;
   left: -100px;
   float: center;
@@ -167,9 +216,9 @@ li{
   padding: 20px,
   outline-color: transparent;
   cursor: pointer;
-  }
+}
   
-  #btnDescifrar{
+#btnDescifrar{
   position: relative;
   float: center;
   font-size: 25px;
@@ -180,9 +229,9 @@ li{
   padding: 20px, 20px;
   outline-color: transparent;
   cursor: pointer;
-  }
+}
   
-  #btnBorrar{
+#btnBorrar{
   position: relative;
   right: -100px;
   float: center;
@@ -194,10 +243,10 @@ li{
   padding: 20px, 20px;
   outline-color: transparent;
   cursor: pointer;
-  }
+}
 
-  #btnSalir{
-    position: relative;
+#btnSalir{
+  position: relative;
   float: center;
   font-size: 25px;
   background-color: #FE7F88;
@@ -207,7 +256,7 @@ li{
   padding: 20px, 20px;
   outline-color: transparent;
   cursor: pointer;
-  }
+}
 
 #msjIngresado{
   text-align: left;
@@ -227,33 +276,33 @@ li{
 }
   
 #vista3{
-height: 700px;
-background-position: center center;
-padding: 5px;
+  height: 700px;
+  background-position: center center;
+  padding: 5px;
 }
 
 #ejmimagen{
-  background-image: url(./Imagenes/ejemploterminado.png);
+  background-image: url(./Imagenes/btnejemplo.png);
   height: 500px;
-    background-repeat: no-repeat;
-    position: relative;
-    left: 70px;
-    align-content: center;
-    background-size: 550px;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 70px;
+  align-content: center;
+  background-size: 550px;
 }
 #btnRegresar{
   position: relative;
-    float: center;
-    font-size: 25px;
-    background-color: #FE7F88;
-    margin-bottom: 10px;
-    border-color: #f8f9fa;
-    color: white;
-    padding: 20px, 20px;
-    outline-color: transparent;
-    left: 500px;
-    cursor: pointer;
-    bottom: 620px;
+  float: center;
+  font-size: 25px;
+  background-color: #FE7F88;
+  margin-bottom: 10px;
+  border-color: #f8f9fa;
+  color: white;
+  padding: 20px, 20px;
+  outline-color: transparent;
+  left: 500px;
+  cursor: pointer;
+  bottom: 620px;
 }
 
 .hide{
@@ -265,7 +314,7 @@ text-align: center;
 font-size: 15px;
 font-family: Arial, Helvetica, sans-serif;
 margin-top: 10px;
-color: black;
+color: #990099;
 }
 
 footer{
@@ -273,4 +322,11 @@ footer{
   font-style: 'Dancing Script';
   font-size: 20px;
   color: black;
+}
+
+@media(max-width: 768px){
+  footer{
+  padding-left: 350px;
+  width: 100%;
+  }
   }
