@@ -2,11 +2,11 @@
 Mujeres Unidas es una plataforma que da acompañamiento a mujeres víctimas de violencia física, psicológica y sexual.
 
 ### Imagen final del proyecto
-![Prototipo en papel](src/Imagenes/imagenfinal1.png)
+![Prototipo en papel](src/Imagenes/imgfinal1.png)
 
-![Prototipo en papel](src/Imagenes/imagenfinal2.png)
+![Prototipo en papel](src/Imagenes/imgfinal2.png)
 
-![Prototipo en papel](src/Imagenes/imagenfinal3.png)
+![Prototipo en papel](src/Imagenes/imgfinal3.png)
 
 
 ## Investigación UX:
@@ -28,17 +28,20 @@ Mujeres Unidas es una plataforma que da acompañamiento a mujeres víctimas de v
 ### Resumen del feedback: 
 
 - Me recomendaron explicar mejor las instrucciones y opte por hacer un ejemplo.
+- Hacer boton ejemplo que llame a una imagen donde explica de que forma funciona el cifrado Cesar.
 - Mejorar los colores y las imagenes.
-- Mejorar el tipo de letra
+- Mejorar el tipo de letra.
+- Poner iconos.
+- Mejorar los terminos descriptivos.
 
 
 ### Imagen del prototipo final en Balsamiq:
 
 ![Vista1](src/Imagenes/Balsamiqvista1.png)
 
-![Vista2](src/Imagenes/Balsamiqvista2.png)
+![Vista2](src/Imagenes/balsamiqvista2.png)
 
-![Ejemplo](src/Imagenes/ejemplo.png)
+![Ejemplo](src/Imagenes/btnejemplo.png)
 
 
 
