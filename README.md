@@ -4,9 +4,9 @@ Mujeres Unidas es una plataforma que da acompañamiento a mujeres víctimas de v
 ### Imagen final del proyecto
 ![Prototipo en papel](src/Imagenes/imgfinal1.png)
 
-![Prototipo en papel](src/Imagenes/imgfinal2.png)
+![Prototipo en papel](src/Imagenes/imgfinal2.PNG)
 
-![Prototipo en papel](src/Imagenes/imgfinal3.png)
+![Prototipo en papel](src/Imagenes/imgfinal3.PNG)
 
 
 ## Investigación UX:
@@ -33,6 +33,7 @@ Mujeres Unidas es una plataforma que da acompañamiento a mujeres víctimas de v
 - Mejorar el tipo de letra.
 - Poner iconos.
 - Mejorar los terminos descriptivos.
+- Ceñirme al balsamiq.
 
 
 ### Imagen del prototipo final en Balsamiq:
